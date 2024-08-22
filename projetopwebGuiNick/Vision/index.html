@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteca | Livros</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Biblioteca</h2>
+        <nav>
+            <a>Livros</a>
+            <a>Autores</a>
+            <a>Estudantes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <div class="description">
+                <div class="description-text">
+                    <h2>Livros cadastrados</h2>
+                    <p>
+                        Veja os livros que estão cadastrados, seus números de ID, <br> autores e anos de publicação.
+                    </p>
+                </div>
+                <form>
+                    <input type="search" placeholder="Buscar livro...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <div id="img-book">
+                <img src="./Book lover-bro (1).svg" alt="">
+                <p>
+                    Nenhum livro cadastrado
+                </p>
+            </div>
+        </section>
+        
+        <section id="section2">
+            <div class="description" id="dsc2">
+                <div class="description-text">
+                    <h2>Gerenciar livros</h2>
+                    <p>
+                        Gerencie os livros que estão cadastrados, podendo adicionar, <br> editar e removê-los da lista.
+                    </p>
+                </div>
+                <form>
+                    <input type="submit" id="add_book" value="Adicionar Livro">
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p> <strong>PWEB I - IFCE campus Cedro, CE</strong></p>
+        <p>Guilherme Bandeira Dias (Banco de Dados)</p>
+        <p>Nickolas Davi Vieira Lima (Front-End)</p>
+        <p>Raimundo Gabriel Pereira Ferreira (Back-End)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Estilos para o diálogo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --color1: rgb(248, 249, 250);
+    --color2: rgb(233, 236, 239);
+    --color3: rgb(52, 58, 64);
+    --colorT: rgba(52, 58, 64, 0.1);
+    --color4: rgb(33, 37, 41);
+    --color5: rgb(3, 83, 164);
+    --colorH: rgb(185, 214, 242);
+
+    --fonte1: 'Roboto 400', sans-serif;
+    --fonte2: 'Roboto 300', sans-serif;
+}
+
+
+#modal {
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color1);
+    box-shadow: 0 4px 8px var(--color2);
+    font-family: var(--fonte2);
+}
+
+/* Estilo para o cabeçalho do diálogo */
+#modal h1 {
+    color: var(--color4);
+    text-align: start;
+}
+
+#modal p {
+    color: var(--color3);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o formulário */
+#modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#modal label {
+    color: var(--color3);
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+
+#modal input {
+    color: var(--color3);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--colorT);
+    background-color: var(--color2);
+}
+
+#modal input:focus {
+    outline: 1px solid var(--color5);
+}
+
+/* Estilos para os botões */
+#modal .btn {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#modal input[type="submit"],
+#modal input[type="reset"] {
+    padding: 10px 20px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color5);
+    color: var(--color1);
+    outline: none;
+    transition: 0.3s;
+}
+
+#modal input[type="reset"] {
+    color: var(--color5);
+    background-color: var(--color1);
+}
+
+#modal input[type="reset"]:hover {
+    background-color: var(--color2);
+}
+
+
+/* Estilos para a animação de fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#modal {
+    opacity: 0; /* Começa invisível */
+    transform: scale(0.8); /* Começa menor */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+#modal.show {
+    opacity: 1;
+    transform: scale(1); /* Retorna ao tamanho normal */
+    animation: fade-in 0.3s ease; /* Aplica a animação fade-in */
+}
+

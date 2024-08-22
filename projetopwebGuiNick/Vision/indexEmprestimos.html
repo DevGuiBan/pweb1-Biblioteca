@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/formCadastro.css" />
+    <title>Biblioteca | Empréstimos</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Biblioteca</h2>
+      <nav>
+        <a href="./indexLivro.html">Livros</a>
+        <a href="./indexAutores.html">Autores</a>
+        <a href="./indexEstudantes.html">Estudantes</a>
+        <a style="color: rgb(3, 83, 164)">Empréstimos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="description">
+          <div class="description-text">
+            <h2>Empréstimos cadastrados</h2>
+            <p>
+              Veja os empréstimos que estão cadastrados, seus números de ID,
+              <br />
+              livros, estudantes e suas respectivas datas de empréstimo e
+              devolução.
+            </p>
+          </div>
+          <form>
+            <input type="search" placeholder="Buscar empréstimo..." />
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
+        <div id="img-book">
+          <img
+            src="./svg/Bibliophile-bro.svg"
+            alt="Empréstimos"
+            draggable="false"
+          />
+          <p>Nenhum empréstimo cadastrado</p>
+        </div>
+      </section>
+
+      <section id="section2">
+        <div class="description" id="dsc2">
+          <div class="description-text">
+            <h2>Gerenciar empréstimos</h2>
+            <p>
+              Gerencie os empréstimos que estão cadastrados, podendo adicionar,
+              <br />
+              editar e removê-los da lista.
+            </p>
+          </div>
+          <form>
+            <input type="submit" id="add_book" value="Adicionar Empréstimo" />
+          </form>
+        </div>
+        <dialog id="modal">
+          <h1>Cadastro de Empréstimos</h1>
+          <p>
+            Cadastre de forma rápida empréstimos, adicionando seu ID, selecionar
+            o livro e seu respectivo aluno.
+          </p>
+
+          <form method="POST" action="">
+            <label for="id">ID:</label>
+            <input
+              placeholder="ID"
+              type="number"
+              id="id"
+              name="id"
+              required
+              min="0"
+            />
+
+            <label for="titulo">Título do Livro:</label>
+            <input
+              placeholder="Título do Livro"
+              type="text"
+              id="titulo"
+              name="titulo"
+              required
+            />
+
+            <label for="nome">Nome do Estudante:</label>
+            <input
+              placeholder="Nome do Estudante"
+              type="text"
+              id="nome"
+              name="nome"
+              required
+            />
+
+            <div class="data-input-emprestimo">
+              <div>
+                <label for="data-emprestimo">Data do Empréstimo:</label>
+                <input
+                  placeholder="Data do Empréstimo"
+                  type="date"
+                  id="data-emprestimo"
+                  name="data-emprestimo"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="data-devolucao">Data de Devolução:</label>
+                <input
+                  placeholder="Data de Devolução"
+                  type="date"
+                  id="data-devolucao"
+                  name="data-devolucao"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="btn">
+              <input type="submit" value="Cadastrar" />
+              <input type="reset" value="Limpar" />
+            </div>
+          </form>
+        </dialog>
+      </section>
+    </main>
+    <footer>
+      <p><strong>PWEB I - IFCE campus Cedro, CE</strong></p>
+      <p>Guilherme Bandeira Dias (Banco de Dados)</p>
+      <p>Nickolas Davi Vieira Lima (Front-End)</p>
+      <p>Raimundo Gabriel Pereira Ferreira (Back-End)</p>
+      <p>&copy; Alguns direitos reservados.</p>
+    </footer>
+
+    <script src="./js/formCadastro.js"></script>
+  </body>
+</html>
