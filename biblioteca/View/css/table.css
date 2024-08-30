@@ -1,0 +1,29 @@
+@import 'geral.css';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--colorB);
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid var(--colorB);
+}
+
+th {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color1);
+    color: var(--color3);
+}

@@ -1,0 +1,48 @@
+body {
+    --sb-track-color: #f8f9fa;
+    --sb-thumb-color: #0353a4;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    border: 1px solid #f8f9fa;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+th {
+    color: #13072e;
+    background-color: #ffffff;
+}

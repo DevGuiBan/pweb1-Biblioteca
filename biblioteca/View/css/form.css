@@ -1,0 +1,75 @@
+@import 'geral.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: start;
+    gap: 10px;
+    height: 500px;
+    width: 450px;
+    padding: 15px;
+    background-color: var(--color1);
+    border: 1px solid var(--colorB);
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--color4);
+    margin-left: 15px;
+}
+
+input,
+select {
+    height: 40px;
+    width: 100%;
+    background-color: var(--color2);
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    border: 1px solid var(--colorB);
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+    outline: 1px solid var(--color5);
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 100%;
+    background-color: var(--color5);
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    height: 50px;
+    background-color: var(--color1);
+    color: var(--color5);
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: var(--color2);
+}

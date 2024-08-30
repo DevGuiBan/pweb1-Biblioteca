@@ -1,0 +1,11 @@
+@import 'geral.css';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    padding: 5px 15px;
+    background-color: var(--color2);
+}
