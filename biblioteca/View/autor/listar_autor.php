@@ -21,6 +21,17 @@ $autores = $controller->listarAutores();
     <link rel="stylesheet" href="../css/scrollbar.css">
     <title>Biblioteca Online | Listar Autores</title>
 </head>
+<style>
+    button {
+        width: 100px;
+        background-color: rgb(239,35,60);
+    }
+    
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+    }
+</style>
 <body>
     <main-header></main-header>
 
@@ -50,11 +61,11 @@ $autores = $controller->listarAutores();
                             <td>" . $autor->getNome() . "</td>
                             <td>" . $autor->getNacionalidade() . "</td>
                             <td>
-                                <a href='editar_autor.php?id=" . $autor->getId() . "'>Editar</a>
+                                <a id='btn-editar' href='editar_autor.php?id=" . $autor->getId() . "'>Editar</a>
                                 
                                 <form method='POST' action='excluir_autor.php' style='display:inline;' onsubmit='return confirmarExclusao();'>
                                     <input type='hidden' name='id' value='" . $autor->getId() . "'>
-                                    <button type='submit'>Excluir</button>
+                                    <button type='submit' class='btn-excluir'>Excluir</button>
                                 </form>
                             </td>
                         </tr>";
@@ -73,7 +84,7 @@ $autores = $controller->listarAutores();
     <script src="../js/footer.js"></script>
     <script>
         function confirmarExclusao() {
-            return confirm("Tem certeza que deseja excluir este autor?");
+            return confirm("Tem certeza que deseja excluir este autor? OS LIVROS RELACIONADOS A ESTE AUTOR TAMBÉM SERÃO EXCLUIDOS.");
         }
     </script>
 </body>

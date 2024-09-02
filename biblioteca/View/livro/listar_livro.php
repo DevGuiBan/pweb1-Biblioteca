@@ -33,6 +33,12 @@ foreach ($autores as $autor) {
     <link rel="stylesheet" href="../css/scrollbar.css">
     <title>Biblioteca Online | Listar Livros</title>
 </head>
+<style>
+    button {
+        width: 100px;
+        background-color: rgb(239,35,60);
+    }
+</style>
 <body>
     <main-header></main-header>
 
@@ -92,7 +98,7 @@ foreach ($autores as $autor) {
     <script src="../js/footer.js"></script>
     <script>
         function confirmarExclusao() {
-            return confirm('Você tem certeza que deseja excluir este item?');
+            return confirm('Você tem certeza que deseja excluir este Livro? O Autor também será excluido.');
         }
     </script>
 </body>

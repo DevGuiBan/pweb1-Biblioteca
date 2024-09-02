@@ -1,3 +1,12 @@
+<?php 
+include_once '../../Controller/EstudanteController.php';
+use Controller\EstudanteController;
+
+$controller = new EstudanteController();
+$estudantes = $controller->listarEstudantes();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,6 +21,17 @@
     <link rel="stylesheet" href="../css/scrollbar.css">
     <title>Biblioteca Online | Listar Estudantes</title>
 </head>
+<style>
+    button {
+        width: 100px;
+        background-color: rgb(239,35,60);
+    }
+    
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+    }
+</style>
 <body>
     <main-header></main-header>
 
@@ -25,6 +45,34 @@
                     rapidamente informações como ID e nome.
                 </p>
             </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+                <?php
+                if (!empty($estudantes)) {
+                    foreach ($estudantes as $estudante) {
+                        echo "<tr>
+                            <td>" . $estudante->getId() . "</td>
+                            <td>" . $estudante->getNome() . "</td>
+                            <td>
+                                <a id='btn-editar' href='editar_estudante.php?id=" . $estudante->getId() . "'>Editar</a>
+                                
+                                <form method='POST' action='excluir_estudante.php' style='display:inline;' onsubmit='return confirmarExclusao();'>
+                                    <input type='hidden' name='id' value='" . $estudante->getId() . "'>
+                                    <button type='submit' class='btn-excluir'>Excluir</button>
+                                </form>
+                            </td>
+                        </tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='4'>Nenhum estudante encontrado</td></tr>";
+                }
+                ?>
+            </table>
         </section>
     </main>
 
@@ -32,5 +80,10 @@
 
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script>
+        function confirmarExclusao() {
+            return confirm("Tem certeza que deseja excluir este Estudante?");
+        }
+    </script>
 </body>
 </html>

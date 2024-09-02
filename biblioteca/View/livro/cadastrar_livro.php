@@ -18,7 +18,7 @@
         if (!empty($titulo) && !empty($ano_publicacao) && !empty($idAutor)) {
             $livroController = new LivroController();
             $livroController->cadastrarLivro($titulo, $ano_publicacao, $idAutor);
-            echo "<p>Livro cadastrado com sucesso!</p>";
+            echo "<script>alert('Livro cadastrado com sucesso!');</script>";
             header("Location: listar_livro.php"); // Redireciona após cadastro bem-sucedido
             exit();
         } else {

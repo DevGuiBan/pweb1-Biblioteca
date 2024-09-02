@@ -10,7 +10,7 @@ nome VARCHAR (100)
 CREATE TABLE autor(
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR (100),
-nacionalidade VARCHAR (3)
+nacionalidade VARCHAR (100)
 );
 
 CREATE TABLE livro(

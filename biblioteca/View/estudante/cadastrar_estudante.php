@@ -1,3 +1,24 @@
+<?php
+    require_once '../../Controller/EstudanteController.php';
+    use Controller\EstudanteController;
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $nome = $_POST['nome'];
+
+        if (!empty($nome)) {
+            $autorController = new EstudanteController();
+
+            if ($autorController->cadastrarEstudante($nome)) {
+                echo "<script>alert('Erro ao cadastrar estudante!');</script>";
+            } else {
+                echo "<script>alert('Estudante cadastrado com sucesso!');</script>";
+            }
+        } else {
+            echo "<p>Por favor, preencha todos os campos.</p>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

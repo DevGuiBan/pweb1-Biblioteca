@@ -5,9 +5,9 @@ class Estudante {
     private $nome;
     private $id;
 
-    public function __construct($nome, $id) {
-        $this->nome = $nome;
+    public function __construct($id, $nome) {
         $this->id = $id;
+        $this->nome = $nome;
     }
 
     //gets

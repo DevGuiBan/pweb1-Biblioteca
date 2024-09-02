@@ -16,7 +16,7 @@ form {
     gap: 10px;
     height: 500px;
     width: 450px;
-    padding: 15px;
+    padding: 10px;
     background-color: var(--color1);
     border: 1px solid var(--colorB);
     border-radius: 5px;

@@ -10,9 +10,9 @@
             $autorController = new AutorController();
 
             if ($autorController->cadastrarAutor($nome, $nacionalidade)) {
-                echo "<p>Autor cadastrado com sucesso!</p>";
+                echo "<script>alert('Erro ao cadastrar autor!');</script>";
             } else {
-                echo "<p>Erro ao cadastrar o autor.</p>";
+                echo "<script>alert('Autor cadastrado com sucesso!');</script>";
             }
         } else {
             echo "<p>Por favor, preencha todos os campos.</p>";
