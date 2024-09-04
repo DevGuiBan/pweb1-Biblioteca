@@ -4,10 +4,10 @@ class Header extends HTMLElement {
             <header>
                 <h2 id="header-title">Biblioteca Online</h2>
                 <nav>
-                    <a href="/Library/pweb1-Biblioteca/View/livro/pagina_livro.html">Livros</a>
-                    <a href="/Library/pweb1-Biblioteca/View/autor/pagina_autor.html">Autores</a>
-                    <a href="/Library/pweb1-Biblioteca/View/estudante/pagina_estudante.html">Estudantes</a>
-                    <a href="/Library/pweb1-Biblioteca/View/emprestimo/pagina_emprestimo.html">Empréstimos</a>
+                    <a href="/pweb1-Biblioteca/View/livro/pagina_livro.html">Livros</a>
+                    <a href="/pweb1-Biblioteca/View/autor/pagina_autor.html">Autores</a>
+                    <a href="/pweb1-Biblioteca/View/estudante/pagina_estudante.html">Estudantes</a>
+                    <a href="/pweb1-Biblioteca/View/emprestimo/pagina_emprestimo.html">Empréstimos</a>
                 </nav>
             </header>
         `;
@@ -16,7 +16,7 @@ class Header extends HTMLElement {
         const headerTitle = this.querySelector("#header-title");
         headerTitle.style.cursor = "pointer";
         headerTitle.addEventListener("click", () => {
-            window.location.href = "/Library/pweb1-Biblioteca/index.html";
+            window.location.href = "/pweb1-Biblioteca/index.html";
         });
     }
 }
