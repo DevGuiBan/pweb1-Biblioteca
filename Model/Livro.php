@@ -48,19 +48,5 @@ class Livro {
     public function setIdAutor($idAutor) {
         return $this->idAutor = $idAutor;
     }
-
-    //gets autor
-
-    public function getIdAutorOB(Autor $autor){
-        return $autor->getId();
-    }
-
-    public function getAutorNome() {
-        return $this->getAutorNome();
-    }
-
-    public function getAutorNacionalidadeOB(Autor $autor){
-        return $autor->getNacionalidade();
-    }
 }
 ?>

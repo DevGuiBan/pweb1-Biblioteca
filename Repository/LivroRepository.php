@@ -23,20 +23,18 @@ class LivroRepository {
         $idAutor = $livro->getIdAutor();
     
         if ($id) {
-            // Atualiza o livro existente
             $sql = "UPDATE livro SET titulo = ?, ano = ?, idAutor = ? WHERE id = ?";
             $stmt = $conn->prepare($sql);
             if ($stmt) {
-                $stmt->bind_param("siii", $titulo, $ano, $idAutor, $id); // Corrigido
+                $stmt->bind_param("siii", $titulo, $ano, $idAutor, $id);
                 $stmt->execute();
                 $stmt->close();
             }
         } else {
-            // Insere um novo livro
             $sql = "INSERT INTO livro (titulo, ano, idAutor) VALUES (?, ?, ?)";
             $stmt = $conn->prepare($sql);
             if ($stmt) {
-                $stmt->bind_param("sii", $titulo, $ano, $idAutor); // Corrigido
+                $stmt->bind_param("sii", $titulo, $ano, $idAutor);
                 $stmt->execute();
                 $stmt->close();
             }

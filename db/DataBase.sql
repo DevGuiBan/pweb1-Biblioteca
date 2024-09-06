@@ -21,9 +21,10 @@ idAutor INT, FOREIGN KEY (idAutor) REFERENCES autor(id) ON DELETE CASCADE
 );
 
 CREATE TABLE emprestimo(
+idEmprestimo INT PRIMARY KEY AUTO_INCREMENT,
 dataEmprestimo DATE NOT NULL,
 dataDevolucao DATE,
-prazoDeDevolucao DATE NOT NULL,
+estadoEmprestimo BOOLEAN DEFAULT TRUE,
 idEstudante INT, FOREIGN KEY (idEstudante) REFERENCES estudante(id) ON DELETE CASCADE,
 idLivro INT, FOREIGN KEY (idLivro) REFERENCES livro(id) ON DELETE CASCADE
 );
