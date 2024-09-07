@@ -15,7 +15,8 @@ Projeto desenvolvido utilizando o padrão de projeto MVC (Model, View, Controlle
 
 - Front-end: HTML, CSS, JavaScript;
 - Back-end: PHP;
-- Banco de Dados: MySQL.
+- Banco de Dados: MySQL;
+- Servidor: XAMPP.
 
 ## Dependências necessárias
 
