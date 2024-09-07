@@ -37,6 +37,6 @@ atualizar e excluir dados de forma eficiente.
 
 ## Colaboradores
 
-Guilherme Bandeira Dias (Banco de Dados);  
+Guilherme Bandeira Dias (Back-end);  
 Nickolas Davi Vieira Lima (Front-end);  
-Raimundo Gabriel Pereira Ferreira (Back-end).
+Raimundo Gabriel Pereira Ferreira (Banco de Dados).
