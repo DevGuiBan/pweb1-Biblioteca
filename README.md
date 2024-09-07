@@ -20,9 +20,9 @@ Projeto desenvolvido utilizando o padrão de projeto MVC (Model, View, Controlle
 
 ## Dependências necessárias
 
-- PHP: versão x;
-- MySQL: versão x;
-- XAMPP: versão x.
+- PHP: versão 8.2.12;
+- MySQL: versão 8.0.21;
+- XAMPP: versão 8.2.12.
 
 ## Como rodar a aplicação
 
