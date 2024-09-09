@@ -11,7 +11,8 @@ foi desenhada para servir uma biblioteca escolar.
 
 ## Tecnologias utilizadas
 
-Projeto desenvolvido utilizando o padrão de projeto MVC (Model, View, Controller) e interação CRUD (Create, Read, Update, Delete).
+Projeto desenvolvido utilizando o padrão de arquitetura de software MVC (Model, View, Controller) e 
+interação CRUD (Create, Read, Update, Delete).
 
 - Front-end: HTML, CSS, JavaScript;
 - Back-end: PHP;
