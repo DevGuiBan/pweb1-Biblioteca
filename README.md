@@ -9,6 +9,11 @@ A aplicação em questão tem como objetivo auxiliar na manutenção dos serviç
 oferecendo serviços como cadastro de livros, autores, alunos e empréstimos, levando em conta que nossa aplicação 
 foi desenhada para servir uma biblioteca escolar.
 
+![Cadastro De Emprestimos](https://github.com/DevGuiBan/pweb1-Biblioteca/blob/main/imgs/CadastroDeEmprestimos.png)
+![Listagem De Emprestimos](https://github.com/DevGuiBan/pweb1-Biblioteca/blob/main/imgs/ListagemDeEmprestimos.png)
+![Listagem De Livros](https://github.com/DevGuiBan/pweb1-Biblioteca/blob/main/imgs/ListagemDeLivros.png)
+![Página Principal](https://github.com/DevGuiBan/pweb1-Biblioteca/blob/main/imgs/PaginaPrincipal.png)
+
 ## Tecnologias utilizadas
 
 Projeto desenvolvido utilizando o padrão de arquitetura de software MVC (Model, View, Controller) e 
