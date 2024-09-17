@@ -41,6 +41,10 @@ interação CRUD (Create, Read, Update, Delete).
 O sistema de gerenciamento de biblioteca online oferece funcionalidades CRUD, permitindo aos usuários inserir, ler, 
 atualizar e excluir dados de forma eficiente.
 
+## Pontos de Melhoramento
+
+Aplicação de Try-Catch, refatoração em algumas partes, melhorar os métodos (POST - UPDATE - DELETE), organização, melhora na lógica do histórico de emprestimos, alteração no design da página (opcional).
+
 ## Colaboradores
 
 Guilherme Bandeira Dias (Back-end);  
